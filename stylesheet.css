@@ -4,7 +4,6 @@
 
 
 /* Navigation */
-
 .navbar {
   text-transform: uppercase;
   font-weight: 700;
@@ -12,24 +11,28 @@
   letter-spacing: .1rem;
   background: rgba(0, 0, 0, 0.6)!important;
 }
+
+/*
 .navbar-brand img {
   height: 2rem;
-}
+}*/
 
 .navbar-nav li{
   padding-right: .7rem;
 }
-
+/*
 .navbar-dark .navbar-nav .nav-link {
   color: white;
   padding-top: .8rem;
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1ebba3;
-}
-
+  color: white;
+}*/
 /* End Navigation */
+
+
+
 /*.resizeimage {
   display: inline-block; /* ここがポイント */
  /* margin-right: 15px;
@@ -41,6 +44,7 @@
   }
 */
 
+/*Image Slider*/
 .carousel {
   height: 400px;
 }
@@ -54,30 +58,37 @@
   height: 100% !important;
   object-fit: fill;
 }
+/*End Image Slider*/
+
 
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
+/*
 a {
   text-decoration: none;
-}
+}*/
+
 
 .clear {
   clear: left;
 }
 
+/*
 .container {
   max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
+*/
 
+/*
 .top-wrapper {
   padding: 180px 0 100px 0;
-  /*background-image: url(../img/IMG_0434.JPG);*/
+  background-image: url(../img/IMG_0434.JPG);
   background-size: cover;
   color: white;
   text-align: center;
@@ -93,6 +104,7 @@ a {
 .top-wrapper p {
   opacity: 0.7;
 }
+*/
 
 .btn-wrapper {
   text-align: center;
@@ -133,27 +145,67 @@ a {
   margin-right: 5px;
 }
 
-
-.lesson-wrapper {
-  margin: 50px 0;
-  padding: 80px 0 100px 0;
-  background-image: url(https://shiniwasa.github.io/shiniwa.github.io/IMG_0431-2.jpg);
+/* Commitment*/
+.top-wrapper {
+  /*margin: 50px 0;*/
+  padding: 130px 0 100px 0;
+  background-image: url(../img/IMG_0431-2.jpg);
   background-size: cover;
   color: white;
   text-align: center;
-  height: 400px;
+  height: 350px;
+  margin: 70px 0px 30px 0px ;
 }
 
+/*
 .heading {
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 50px;
-}
+  color: white;
+}*/
 
-.heading h2 {
+.heading a {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  color: white;
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 1rem;
 }
+
+.heading a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+/*End of Commitment*/
+
+/* Company Product info */
+.product-wraper {/*親div*/
+  position: relative;/*相対配置*/
+  }
+
+.product-wrapper p {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 1rem;
+  }
+
+.product-wrapper img {
+  width: 100%;
+  }
+
+/*End of Company Product info */
 
 /*
 .lesson-wrapper {
@@ -208,15 +260,18 @@ a {
 
 .message-wrapper {
   border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
 .message {
   padding: 15px 40px 15px 40px;
-  background-color: #5dca88;
+  /*background-color: #5dca88;*/
+  background-color: rgba(255, 0, 0, 0.76);
   cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+  /*box-shadow: 0 7px #f81302;*/
+  box-shadow: 2px 2px 4px gray;
   line-height: 10px;
 }
 
@@ -226,16 +281,55 @@ a {
   box-shadow: none;
 }
 
+/* footer */
+.footer-wrapper p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: normal;
+  font-size: 8px;
+  letter-spacing: 0.15rem;
+}
+
+
 footer img {
   width: 125px;
 }
 
 footer p {
   color: #b3aeb5;
-  font-size: 12px;
+  /*font-size: 10px;*/
 }
 
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
+
+
+
+/* Back to top */
+.back_to_top {
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.back_to_top:hover {
+	color: #fff !important;
+	background-color: #ed702b;
+	text-decoration: none;
+}
+
+/* End Back to top */
