@@ -15,6 +15,33 @@
     <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     -->
+   
+    <!--Back to top-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+    var offset = 100;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+    jQuery('.back_to_top').fadeIn(duration);
+    } else {
+    jQuery('.back_to_top').fadeOut(duration);
+    }
+    });
+    
+    jQuery('.back_to_top').click(function(event) {
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+    })
+    });
+    </script>
+    
+    <!--End Back to top-->
+
   </head>
   <body>
    <!--  <header>
@@ -47,26 +74,26 @@
     <!--    Navigation  -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">布草履専門ピース</a>
+    <a class="navbar-brand" href="#">布草履専門店ピース</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collaspe navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">オンラインショップ</a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">草履のこだわり</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#">商品案内</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">オンラインショップ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">店舗案内</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">会社概要</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">お知らせ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">よくあるご質問</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">お問い合わせ</a>
@@ -137,7 +164,6 @@
         <button type="button" class="btn btn-primary btn-lg">Get started</button> -->
       </div>
     </div>
-    
     <div class="carousel-item">
       <img class="image" src="https://shiniwasa.github.io/shiniwa.github.io/IMG_0730.JPG">
     </div>
@@ -148,7 +174,7 @@
       <img class="image" src="https://shiniwasa.github.io/shiniwa.github.io/IMG_0737.JPG">
     </div>
     <div class="carousel-item">
-      <img class="image" src="https://shiniwasa.github.io/shiniwa.github.io//IMG_0738.JPG">
+      <img class="image" src="https://shiniwasa.github.io/shiniwa.github.io/IMG_0738.JPG">
     </div>
     <div class="carousel-item">
       <img class="image" src="https://shiniwasa.github.io/shiniwa.github.io/IMG_0739.JPG">
@@ -176,16 +202,17 @@
     <!--    </div> 
     </div> -->
 
-
-    <div class="lesson-wrapper">
+<!-- Commitment -->
+    <div class="top-wrapper">
       <div class="container">
         <div class="heading">
-          <h2>草履へのこだわり</h2>
-        </div>
+        <a href="#">草履へのこだわり</a>
+      </div>
+      </div>
         <div class="lessons">
           <div class="lesson">
             <div class="lesson-icon">
-             <!-- <img src="https://shiniwasa.github.com/shiniwa.github.io/blob/master/IMG_0431-2.JPG">
+             <!-- <img src="img/IMG_0431-2.JPG">
               <p>草履へのこだわり</p> -->
             </div>
           <!--  <p class="text-contents">Webページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>-->
@@ -210,12 +237,27 @@
               <p>PHP</p>
             </div>
             <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-          </div>-->
-          <div class="clear"></div>
+          </div>
+          <div class="clear"></div> -->
+        </div>
+    </div>
+
+    <!-- product -->
+    <div class="product-wrapper">
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-12 col-lg-6">
+          <img src="https://shiniwasa.github.io/shiniwa.github.io/IMG_0730.JPG">
+          <p>商品案内</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://shiniwasa.github.io/shiniwa.github.io/IMG_0733.JPG" class="img-fluid">
+          <p>店舗案内</p>
         </div>
       </div>
     </div>
-  
+
+
     <div class="message-wrapper">
       <div class="container">
         <!--<div class="heading">
@@ -223,19 +265,51 @@
           <h3>Let's learn to code, learn to be creative!</h3>-->
           <div class="btn-wrapper">
            <!-- <a href="#" class="btn signup">新規登録はこちら</a>
-            <p>or</p> -->
+            <p>or</p> 
             <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebook</a>
-            <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a>
+            <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a> -->
           </div>
         </div>
-        <span class="btn message">ご購入はこちら<p>オンラインショップ</p></span>
-      </div>
-    </div>
-    <footer>
+        <span class="btn message">ご購入はこちら<br>オンラインショップ</br></span>
+        <div class="container-fluid padding">
+          <div class="row text-center padding">
+            <div class="col-12">
+              <!--<h2>Connect</h2>-->
+              <br>
+            </div>
+            <div class="col-12 social padding">
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+              <!-- <a href="#"><i class="fab fa-google-plus-g"></i></a>-->
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+             <!-- <a href="#"><i class="fab fa-youtube"></i></a>-->               
+            </div>
+          </div>
+        </div>
+  </div>
+  <footer>
+      <div class="footer-wrapper">
       <div class="container">
-      <!-- <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-        <p>Learn to code, learn to be creative.</p> -->  
-      </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-md-12">
+                <div class="text-center text-white footer-alt">
+                 <!--   <ul class="list-unstyled list-inline mb-3">
+                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook text-muted"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin text-muted"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-pinterest text-muted"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-twitter text-muted"></i></a></li>
+                    </ul> -->
+                    <p class="text-muted mb-0">&copy; Copyright | NUNOZOURI PEACE CO.,LTD. 2020 All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     </footer>
+
+<!--Back to top -->
+    <div class="back_to_top">↑</div>
+<!--End Back -->
+
   </body>
 </html>
